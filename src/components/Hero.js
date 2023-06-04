@@ -36,9 +36,9 @@ function Hero() {
             </div>
 
             {/* right section */}
-            <div className=''>
+            <div className='max-w-[300px] max-h-[250px]'>
 
-                <img src={port} alt="my image" className='max-w-[300px] max-h-[300px] rounded-3xl' />
+                <img src={port} alt="my image" className='w-[300px] h-[300px] rounded-full animate-[bounce_10s_infinite]' />
             </div>
 </div>
 
