@@ -27,7 +27,7 @@ function ProjectSection() {
         </div>
         <div className='max-w-[500px]'>
           <h2 className='font-semibold'>Blog App</h2>
-          <p className='text-slate-500 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aperiam corporis cum earum enim, obcaecati totam harum magnam nostrum error aut quidem deleniti consectetur, explicabo blanditiis qui sapiente non reprehenderit!</p>
+          <p className='text-slate-500 font-semibold'>This is Blog app in which you can add your Stories by login into your acccount and you can also like and comment on others post. App has full login authentication features for storing media we using cloudinary server</p>
 
           <div className='flex gap-4 my-4 mx-auto w-fit'>
             <h2 className='font-semibold'>React</h2>
