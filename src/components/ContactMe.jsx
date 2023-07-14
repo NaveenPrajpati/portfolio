@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function ContactMe() {
   return (
-    <div className="bg-white dark:bg-gray-900 ">
-  <div className="py-8 px-4 mx-auto ">
+   
+  <div className="py-8 px-4 mx-auto bg-gray-900">
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me</h2>
-      <form action="#" className="space-y-8 w-3/5 mx-auto">
+      <form action="#" className="space-y-8 sm:w-3/5 mx-auto">
           <div>
               <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
               <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:shadow-sm-light" placeholder="abc@mail.com" required/>
@@ -21,6 +21,7 @@ export default function ContactMe() {
           <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit dark:bg-sky-600 ">Send message</button>
       </form>
   </div>
-</div>
+ 
+
   )
 }

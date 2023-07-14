@@ -7,16 +7,18 @@ import tailImg from '../assests/tail.png'
 import mongoImg from '../assests/mongodb.png'
 import nodeImg from '../assests/nodejs.png'
 import reduxImg from '../assests/redux.png'
+import tsImg from '../assests/ts.png'
 
 function Skillsection() {
   return (
     <div className='flex mx-auto w-fit items-center gap-6 my-10'>
     <h2 className='text-2xl font-semibold'>Tech Stack |</h2>
-    <ul className='flex gap-5'>
+    <ul className='flex flex-wrap gap-5'>
         <li><img src={htmlImg} alt="" /></li>
         <li><img src={cssImg} alt="" /></li>
         <li><img src={tailImg} alt="" /></li>
         <li><img src={jsImg} alt="" /></li>
+        <li><img src={tsImg} alt="" /></li>
         <li><img src={reactImg} alt="" /></li>
         <li><img src={reduxImg} alt="" /></li>
         <li><img src={nodeImg} alt="" /></li>

@@ -7,14 +7,14 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 function Navbar() {
   return (
    
-   <nav class="flex flex-col sm:flex-row items-center justify-between flex-wrap px-6 py-2 h-12">
-  <div class="flex items-center  mr-6 w-fit">
-   <GiHamburgerMenu className=' sm:hidden'/>
-    <span class="font-semibold text-xl tracking-tight">naveen.dev</span>
+   <nav class=" flex items-center flex-wrap justify-between item-center px-6 py-2 ">
+  <div class="flex items-center">
+   <GiHamburgerMenu className='sm:hidden'/>
+    <p class="font-semibold text-xl ">naveen.dev</p>
   </div>
   
-  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-    <div class="text-sm lg:flex-grow">
+ 
+    <div class="text-sm sm:flex hidden">
       <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0  mr-4">
         Home
       </a>
@@ -28,11 +28,11 @@ function Navbar() {
         Contact
       </a>
     </div>
+
     <div className='flex items-center gap-2'>
-    <p className=' font-semibold flex items-center'>My resume <AiOutlineArrowRight className=' animate-pulse'/> </p>
-      <a target='_blank' href="https://drive.google.com/file/d/1DclyErg1i3yDc-OFG_xESysDoUhlW0Ap/view?usp=sharing" class="inline-block text-sm px-4 py-2 leading-none border rounded  hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+    <p className=' font-semibold flex items-center'>  </p>
+      <a target='_blank' href="https://drive.google.com/file/d/1DclyErg1i3yDc-OFG_xESysDoUhlW0Ap/view?usp=sharing" class="text-sm px-4 py-1  border rounded  hover:border-transparent hover:text-teal-500 hover:bg-white flex items-center">My resume <AiOutlineArrowRight className=' animate-pulse'/></a>
     </div>
-  </div>
 </nav>
   )
 }

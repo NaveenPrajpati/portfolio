@@ -9,19 +9,15 @@ import projectImg2  from '../assests/projectBlog.png'
 
 function ProjectSection() {
   return (
-    <div className='my-20'>
+    <div className='my-20 w-full'>
 
-    <div className='w-fit ml-32'>
-
+    <div className=' sm:ml-32'>
       <h2 className=' text-sky-500 font-semibold'>PORTFOLIO</h2>
-      <div className='flex items-center gap-2'>
-        <p className='font-bold text-lg'>Each project is a unique piece of Development</p>
-        <BsPuzzleFill className='text-green-400 text-2xl font-bold ' />
-      </div>
+        <p className='font-bold text-lg flex items-center gap-1'>Each project is a unique piece of Development <BsPuzzleFill className='text-green-400  font-bold ' /></p>
     </div>
 
       {/* first projext */}
-      <div className='flex flex-col sm:flex-row sm:h-[400px]  mt-10 gap-10 box-border mx-auto w-fit'>
+      <div className='flex flex-col sm:flex-row sm:h-[400px]  mt-10 gap-10  mx-auto '>
 
         <div>
           <img src={projectImg2} alt="prject image" className='max-w-[500px]' />
@@ -57,7 +53,7 @@ function ProjectSection() {
         </div>
         <div className='max-w-[500px]'>
           <h2 className='font-semibold'>Robot Game</h2>
-          <p className='text-slate-500 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aperiam corporis cum earum enim, obcaecati totam harum magnam nostrum error aut quidem deleniti consectetur, explicabo blanditiis qui sapiente non reprehenderit!</p>
+          <p className='text-slate-500 font-semibold'>This is frontend react base project managing state is backbone of this project with drag and drop functionality you can change state or we can say position of robot in this game</p>
 
           <div className='flex gap-4 my-4 mx-auto w-fit'>
             <h2 className='font-semibold'>React</h2>

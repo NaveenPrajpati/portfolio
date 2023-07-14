@@ -4,7 +4,7 @@ import aboutImg from '../assests/Aboutpexel.jpg'
 export default function About() {
   return (
     <div className='flex flex-col sm:flex-row sm:justify-center w-fit mx-auto my-20 gap-10'>
-    <img src={aboutImg} alt="" className='max-w-[400px]' />
+    <img src={aboutImg} alt="" className='max-w-[400px] mx-auto' />
     <div>
     <h3 className='font-bold text-sky-600'>ABOUT ME</h3>
     <h2 className='font-bold'>A dedicated Full-Stack Web Developer</h2>

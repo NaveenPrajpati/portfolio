@@ -1,18 +1,21 @@
 import React from 'react'
 import port from '../assests/port.jpg'
-
 import { TypeAnimation } from 'react-type-animation';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 
 function Hero() {
     return (
         <div>
-        <div className='flex flex-col sm:flex-row sm:justify-center items-center gap-10 sm:h-[500px] box-border'>
+        <div className='flex flex-row flex-wrap sm:justify-center sm:items-center gap-10 '>
 
             {/* left section */}
-            <div className='min-w-[500px]'>
+            <div className='sm:min-w-[500px] '>
                 {/* <h1>Full-Stack <br /> Developer</h1> */}
                 <TypeAnimation
                     sequence={[
@@ -36,10 +39,10 @@ function Hero() {
             </div>
 
             {/* right section */}
-            <div className='max-w-[300px] max-h-[250px]'>
-
-                <img src={port} alt="my image" className='w-[300px] h-[300px] rounded-full animate-[bounce_10s_infinite]' />
+            <div className='mx-auto sm:w-fit'>
+                <img src={port} alt="my image" className='w-[300px] h-[300px] rounded-full animate-[bounce_10s_infinite] mx-auto' />
             </div>
+       
 </div>
 
 

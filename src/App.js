@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skillsection from './components/Skillsection';
@@ -9,15 +9,15 @@ import ContactMe from './components/ContactMe';
 
 function App() {
   return (
-    <div className=' '>
+    <div className='w-full '>
   <Navbar/>
-    <div className="w-[90%] mx-auto ">
+    <div className="w-full sm:w-9/12  mx-auto p-3 mt-32">
   <Hero/>
 <Skillsection/>
   <About/>
 <ProjectSection/>
     </div>
-<ContactMe/>
+  <ContactMe/>
     </div>
   );
 }
