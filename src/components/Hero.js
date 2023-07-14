@@ -2,10 +2,7 @@ import React from 'react'
 import port from '../assests/port.jpg'
 import { TypeAnimation } from 'react-type-animation';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import 'swiper/css';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 
