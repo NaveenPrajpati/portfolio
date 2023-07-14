@@ -6,6 +6,8 @@ import projectImg4  from '../assests/projectSnapshot.png'
 import projectImg1  from '../assests/robogame.png'
 import projectImg3  from '../assests/CrudApp.png'
 import projectImg2  from '../assests/projectBlog.png'
+import studynotionImg  from '../assests/studynotionImg.png'
+import ProjectCard from './ProjectCard'
 
 function ProjectSection() {
   return (
@@ -17,121 +19,48 @@ function ProjectSection() {
     </div>
 
       {/* first projext */}
-      <div className='flex flex-col sm:flex-row sm:h-[400px]  mt-10 gap-10  mx-auto '>
+      <ProjectCard
+        name={'StudyNotion'}
+        direction={'flex-row-reverse'}
+        image={studynotionImg}
+        tech={['Cloudinary','Redux-Toolkit','nodeMailer']}
+        gitLink={'https://github.com/NaveenPrajpati'}
+        liveLink={'https://studynotionfront.netlify.app/'}
+        description={'This is Blog app in which you can add your Stories by login into your acccount and you can also like and comment on others post. App has full login authentication features for storing media we using cloudinary server'}
+      />
 
-        <div>
-          <img src={projectImg2} alt="prject image" className='max-w-[500px]' />
-        </div>
-        <div className='max-w-[500px]'>
-          <h2 className='font-semibold'>Blog App</h2>
-          <p className='text-slate-500 font-semibold'>This is Blog app in which you can add your Stories by login into your acccount and you can also like and comment on others post. App has full login authentication features for storing media we using cloudinary server</p>
-
-          <div className='flex gap-4 my-4 mx-auto w-fit'>
-            <h2 className='font-semibold'>React</h2>
-            <h2 className='font-semibold'>Redux-Toolkit</h2>
-          </div>
-
-
-          <div className='flex gap-5  my-4'>
-            <a href='https://github.com/NaveenPrajpati/blog-front' target='_blank' className='flex items-center font-semibold'>
-              <span>Code </span>
-              <AiOutlineGithub className='text-xl' />
-            </a>
-            <a href='https://naveen-blogapp.netlify.app/' target='_blank' className='flex items-center font-semibold'>
-              <span>Live Demo</span>
-              <SiNetlify className='text-xl text-cyan-500' />
-            </a>
-          </div>
-        </div>
-      </div>
-
-{/* second projext */}
-      <div className='flex flex-col sm:flex-row-reverse sm:h-[600px] mt-10 gap-10 box-border mx-auto w-fit'>
-
-        <div>
-          <img src={projectImg1} alt="prject image" className='max-w-[500px]'/>
-        </div>
-        <div className='max-w-[500px]'>
-          <h2 className='font-semibold'>Robot Game</h2>
-          <p className='text-slate-500 font-semibold'>This is frontend react base project managing state is backbone of this project with drag and drop functionality you can change state or we can say position of robot in this game</p>
-
-          <div className='flex gap-4 my-4 mx-auto w-fit'>
-            <h2 className='font-semibold'>React</h2>
-            <h2 className='font-semibold'>useState</h2>
-          </div>
-
-
-          <div className='flex gap-5  my-4'>
-            <a href='https://github.com/NaveenPrajpati/assignmentRacho' target='_blank' className='flex items-center font-semibold'>
-              <span>Code </span>
-              <AiOutlineGithub className='text-xl' />
-            </a>
-            <a href='https://648d3f13b32a794b204664d6--eclectic-flan-f5667d.netlify.app/' target='_blank' className='flex items-center font-semibold'>
-              <span>Live Demo </span>
-              <SiNetlify className='text-xl text-cyan-500' />
-            </a>
-          </div>
-        </div>
-      </div>
-
-   {/* third projext */}
-   <div className='flex flex-col sm:flex-row sm:h-[400px]  mt-10 gap-10 box-border mx-auto w-fit'>
-
-<div>
-  <img src={projectImg3} alt="prject image" className='max-w-[500px]' />
-</div>
-<div className='max-w-[500px]'>
-  <h2 className='font-semibold'>Employee Management App</h2>
-  <p className='text-slate-500 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aperiam corporis cum earum enim, obcaecati totam harum magnam nostrum error aut quidem deleniti consectetur, explicabo blanditiis qui sapiente non reprehenderit!</p>
-
-  <div className='flex gap-4 my-4 mx-auto w-fit'>
-    <h2 className='font-semibold'>React</h2>
-    <h2 className='font-semibold'>Redux-Toolkit</h2>
-  </div>
-
-
-  <div className='flex gap-5  my-4'>
-    <a href='https://github.com/NaveenPrajpati/emp-manage' target='_blank' className='flex items-center font-semibold'>
-      <span>Code </span>
-      <AiOutlineGithub className='text-xl' />
-    </a>
-    <a href='https://6470746aa1724172eb3bfbe8--heartfelt-cobbler-b062a3.netlify.app/' target='_blank' className='flex items-center font-semibold'>
-      <span>Live Demo</span>
-      <SiNetlify className='text-xl text-cyan-500' />
-    </a>
-  </div>
-</div>
-</div>
+      {/* second projext */}
+      <ProjectCard
+        name={'Blog App'}
+        direction={'flex-row'}
+        image={projectImg2}
+        tech={['React','Redux-Toolkit']}
+        gitLink={'https://github.com/NaveenPrajpati/blog-front'}
+        liveLink={'https://naveen-blogapp.netlify.app/'}
+        description={'This is Blog app in which you can add your Stories by login into your acccount and you can also like and comment on others post. App has full login authentication features for storing media we using cloudinary server'}
+      />
+     
+    {/* third projext */}
+     <ProjectCard
+        name={'Robot Game'}
+        direction={'flex-row-reverse'}
+        image={projectImg1}
+        tech={['React','useState']}
+        gitLink={'https://github.com/NaveenPrajpati/assignmentRacho'}
+        liveLink={'https://648d3f13b32a794b204664d6--eclectic-flan-f5667d.netlify.app/'}
+        description={'This is frontend react base project managing state is backbone of this project with drag and drop functionality you can change state or we can say position of robot in this game'}
+      />
 
 {/* fourth projext */}
-<div className='flex flex-col sm:flex-row-reverse sm:h-[600px] mt-10 gap-10 box-border mx-auto w-fit'>
-
-<div>
-  <img src={projectImg4} alt="prject image" className='max-w-[500px]'/>
-</div>
-<div className='max-w-[500px]'>
-  <h2 className='font-semibold'>Snapshot</h2>
-  <p className='text-slate-500 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aperiam corporis cum earum enim, obcaecati totam harum magnam nostrum error aut quidem deleniti consectetur, explicabo blanditiis qui sapiente non reprehenderit!</p>
-
-  <div className='flex gap-4 my-4 mx-auto w-fit'>
-    <h2 className='font-semibold'>React</h2>
-    <h2 className='font-semibold'>context-api</h2>
-  </div>
-
-
-  <div className='flex gap-5  my-4'>
-    <a href='https://github.com/NaveenPrajpati/snapshot' target='_blank' className='flex items-center font-semibold'>
-      <span>Code </span>
-      <AiOutlineGithub className='text-xl' />
-    </a>
-    <a href='https://sparkling-torte-4449d4.netlify.app/' target='_blank' className='flex items-center font-semibold'>
-      <span>Live Demo </span>
-      <SiNetlify className='text-xl text-cyan-500' />
-    </a>
-  </div>
-</div>
-</div>
-
+<ProjectCard
+        name={'Employee Management App'}
+        direction={'flex-row'}
+        image={projectImg3}
+        tech={['React','useState']}
+        gitLink={'https://github.com/NaveenPrajpati/emp-manage'}
+        liveLink={'https://6470746aa1724172eb3bfbe8--heartfelt-cobbler-b062a3.netlify.app/'}
+        description={'This is simple CRUD base application in which you can add, remove, update, delete employee'}
+      />
 
 
 

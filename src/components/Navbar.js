@@ -7,31 +7,31 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 function Navbar() {
   return (
    
-   <nav class=" flex items-center flex-wrap justify-between item-center px-6 py-2 ">
-  <div class="flex items-center">
+   <nav className=" flex items-center flex-wrap justify-between item-center px-6 py-2 ">
+  <div className="flex items-center">
    <GiHamburgerMenu className='sm:hidden'/>
-    <p class="font-semibold text-xl ">naveen.dev</p>
+    <p className="font-semibold text-xl ">naveen.dev</p>
   </div>
   
  
-    <div class="text-sm sm:flex hidden">
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0  mr-4">
+    <div className="text-sm sm:flex hidden">
+      <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0  mr-4">
         Home
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0  mr-4">
+      <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0  mr-4">
         About
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0  mr-4">
+      <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0  mr-4">
         Projects
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 ">
+      <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 ">
         Contact
       </a>
     </div>
 
     <div className='flex items-center gap-2'>
     <p className=' font-semibold flex items-center'>  </p>
-      <a target='_blank' href="https://drive.google.com/file/d/1DclyErg1i3yDc-OFG_xESysDoUhlW0Ap/view?usp=sharing" class="text-sm px-4 py-1  border rounded  hover:border-transparent hover:text-teal-500 hover:bg-white flex items-center">My resume <AiOutlineArrowRight className=' animate-pulse'/></a>
+      <a target='_blank' href="https://drive.google.com/file/d/1DclyErg1i3yDc-OFG_xESysDoUhlW0Ap/view?usp=sharing" className="text-sm px-4 py-1  border rounded  hover:border-transparent hover:text-teal-500 hover:bg-white flex items-center">My resume <AiOutlineArrowRight className=' animate-pulse'/></a>
     </div>
 </nav>
   )
