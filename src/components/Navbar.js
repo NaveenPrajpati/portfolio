@@ -31,7 +31,7 @@ function Navbar() {
 
     <div className='flex items-center gap-2'>
     <p className=' font-semibold flex items-center'>  </p>
-      <a target='_blank' href="https://drive.google.com/file/d/1DclyErg1i3yDc-OFG_xESysDoUhlW0Ap/view?usp=sharing" className="text-sm px-4 py-1  border rounded  hover:border-transparent hover:text-teal-500 hover:bg-white flex items-center">My resume <AiOutlineArrowRight className=' animate-pulse'/></a>
+      <a target='_blank' href="https://drive.google.com/file/d/1cXlEL5N-380hxJQH0vBtYk_yI-2X0Z-k/view?usp=sharing" className="text-sm px-4 py-1  border rounded  hover:border-transparent hover:text-teal-500 hover:bg-white flex items-center">My resume <AiOutlineArrowRight className=' animate-pulse'/></a>
     </div>
 </nav>
   )
