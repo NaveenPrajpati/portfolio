@@ -28,19 +28,7 @@ function Skillsection() {
   return (
     <div className='flex mx-auto w-fit items-center gap-6 my-10'>
     <h2 className='text-2xl font-semibold'>Tech Stack |</h2>
-    {/* <ul className='flex flex-wrap gap-5'>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul> */}
+    
 
     <Swiper
         spaceBetween={5}
@@ -48,14 +36,14 @@ function Skillsection() {
         slidesPerView={6}
         loop={true}
         autoplay={{
-          delay: 1000,
+          delay: 500,
           disableOnInteraction: false,
-          waitForTransition:false
+         
         }}
       
        
         modules={[Autoplay,  Navigation]}
-        className="w-full sm:w-[600px]"
+        className="w-full sm:w-[600px] "
       >
         <SwiperSlide><img src={htmlImg} alt="" /></SwiperSlide>
         <SwiperSlide><img src={cssImg} alt="" /></SwiperSlide>

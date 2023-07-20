@@ -1,8 +1,7 @@
 import React from 'react'
 import port from '../assests/port.jpg'
 import { TypeAnimation } from 'react-type-animation';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-
+import {BsGithub, BsGooglePlay, BsLinkedin} from 'react-icons/bs'
 
 
 
@@ -29,9 +28,10 @@ function Hero() {
 
                 <p className='font-semibold text-slate-500 mt-4 '>Hi,i'm naveen kumar. A passionate Full-Stack Developer <br />
                     based in Noida-UP</p>
-                <div className='flex text-3xl gap-2 mt-4'>
-                   <a target='_blank' href="https://github.com/NaveenPrajpati"><AiFillGithub /></a> 
-                   <a target='_blank' href="https://www.linkedin.com/in/naveen-kumar-106611237"><AiFillLinkedin /></a>         
+                <div className='flex text-3xl gap-3 mt-4'>
+                   <a target='_blank' className=' hover:translate-y-1' href="https://github.com/NaveenPrajpati"><BsGithub/></a> 
+                   <a target='_blank' className=' hover:translate-y-1' href="https://www.linkedin.com/in/naveen-kumar-106611237"><BsLinkedin/></a>         
+                   <a target='_blank' className=' hover:translate-y-1' href="https://play.google.com/store/apps/dev?id=6805735233549042251"><BsGooglePlay/></a>         
                 </div>
             </div>
 
