@@ -9,9 +9,9 @@ import ContactMe from './components/ContactMe';
 
 function App() {
   return (
-    <div className='w-[100%] bg-blue-200'>
+    <div className='w-[100%] '>
   <Navbar/>
-    <div className="w-full bg-green-200 sm:container  mx-auto p-3  sm:mt-32">
+    <div className="w-full sm:container  mx-auto p-3  sm:mt-32">
   <Hero/>
 <Skillsection/>
   <About/>
