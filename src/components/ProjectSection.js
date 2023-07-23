@@ -14,7 +14,7 @@ function ProjectSection() {
     <div className='my-20'>
 
     <div className=' sm:ml-32'>
-      <h2 className=' text-sky-500 font-semibold'>PORTFOLIO</h2>
+      <h2 className=' text-sky-500 font-bold text-xl sm:text-3xl'>WORK-SAMPLE</h2>
         <p className='font-bold text-lg  flex items-center gap-1'>Each project is a unique piece of Development <BsPuzzleFill className='text-green-400  font-bold ' /></p>
     </div>
 
