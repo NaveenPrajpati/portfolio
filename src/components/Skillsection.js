@@ -26,24 +26,35 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 function Skillsection() {
   return (
-    <div className='flex mx-auto w-fit items-center gap-6 my-10'>
-    <h2 className='text-2xl font-semibold'>Tech Stack |</h2>
-    
+    <div className='flex justify-center items-center gap-6 my-10  p-1'>
+    <h2 className='sm:text-3xl font-semibold whitespace-nowrap '>Tech Stack |</h2>
 
     <Swiper
-        spaceBetween={5}
+    breakpoints={{
+      320: {
+      slidesPerView: 2,
+      spaceBetween: 3
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 8
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 5,
+      spaceBetween: 10
+    }
+    }}
         centeredSlides={true}
-        slidesPerView={6}
         loop={true}
         autoplay={{
           delay: 500,
           disableOnInteraction: false,
-         
         }}
       
        
         modules={[Autoplay,  Navigation]}
-        className="w-full sm:w-[600px] "
+        className=" mx-auto"
       >
         <SwiperSlide><img src={htmlImg} alt="" /></SwiperSlide>
         <SwiperSlide><img src={cssImg} alt="" /></SwiperSlide>

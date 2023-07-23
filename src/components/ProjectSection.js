@@ -11,11 +11,11 @@ import ProjectCard from './ProjectCard'
 
 function ProjectSection() {
   return (
-    <div className='my-20 w-full'>
+    <div className='my-20'>
 
     <div className=' sm:ml-32'>
       <h2 className=' text-sky-500 font-semibold'>PORTFOLIO</h2>
-        <p className='font-bold text-lg flex items-center gap-1'>Each project is a unique piece of Development <BsPuzzleFill className='text-green-400  font-bold ' /></p>
+        <p className='font-bold text-lg  flex items-center gap-1'>Each project is a unique piece of Development <BsPuzzleFill className='text-green-400  font-bold ' /></p>
     </div>
 
       {/* first projext */}

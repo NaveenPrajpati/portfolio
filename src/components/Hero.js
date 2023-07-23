@@ -7,12 +7,12 @@ import {BsGithub, BsGooglePlay, BsLinkedin} from 'react-icons/bs'
 
 function Hero() {
     return (
-        <div>
-        <div className='flex flex-row flex-wrap sm:justify-center sm:items-center gap-10 '>
+
+        <div className=' flex flex-col sm:flex-row sm:justify-center  sm:items-center gap-24 sm:gap-10 '>
 
             {/* left section */}
-            <div className='sm:min-w-[500px] '>
-                {/* <h1>Full-Stack <br /> Developer</h1> */}
+            <div className='w-full sm:w-1/2 '>
+              
                 <TypeAnimation
                     sequence={[
                         'Full-Stack Developer', // Types 'One'
@@ -23,7 +23,7 @@ function Hero() {
                     speed={10}
                     cursor={true}
                     repeat={Infinity}
-                    style={{ fontSize: '3em', display: 'inline-block' }}
+                    style={{ fontSize: '3em', display: 'inline-block',width:'100%'}}
                 />
 
                 <p className='font-semibold text-slate-500 mt-4 '>Hi,i'm naveen kumar. A passionate Full-Stack Developer <br />
@@ -36,14 +36,14 @@ function Hero() {
             </div>
 
             {/* right section */}
-            <div className='mx-auto sm:w-fit'>
+            <div className='mx-auto sm:w-fit  '>
                 <img src={port} alt="my image" className='w-[300px] h-[300px] rounded-full animate-[bounce_10s_infinite] mx-auto' />
             </div>
        
 </div>
 
 
-        </div>
+   
     )
 }
 

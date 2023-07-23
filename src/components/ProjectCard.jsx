@@ -4,14 +4,13 @@ import { SiNetlify } from 'react-icons/si'
 
 export default function ProjectCard({gitLink,liveLink,description,name,direction,image,tech}) {
   return (
-    <div className={`flex flex-col sm:${direction} sm:h-[500px] mt-20 gap-10 box-border mx-auto w-fit`}>
+    <div className={`flex flex-wrap flex-col items-center sm:${direction} sm:justify-center w-full mx-auto my-20 gap-10`}>
 
-        <div>
-          <img src={image} alt="prject image" className='max-w-[500px]' />
-        </div>
-        <div className='max-w-[500px]'>
+          <img src={image} alt="prject image" className='sm:w-[500px]  max-h-[500px]' />
+       
+        <div className='sm:w-2/5 sm:min-w-[400px] '>
           <h2 className='font-semibold'>{name}</h2>
-          <p className='text-slate-500 font-semibold'>{description}</p>
+          <p className='text-slate-500 min-w-[300px] font-semibold'>{description}</p>
           
           <div className='flex gap-4 my-4 mx-auto w-fit'>
           {tech?.map((item,index)=>(

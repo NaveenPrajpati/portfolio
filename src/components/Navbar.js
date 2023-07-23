@@ -7,7 +7,7 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 function Navbar() {
   return (
    
-   <nav className=" flex items-center flex-wrap justify-between item-center px-6 py-2 ">
+   <nav className="w-full  flex items-center flex-wrap justify-between item-center px-6 py-2 ">
   <div className="flex items-center">
    <GiHamburgerMenu className='sm:hidden'/>
     <p className="font-semibold text-xl ">naveen.dev</p>
